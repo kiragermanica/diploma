@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Необходимо для правильного позиционирования футера */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    flex: 1; /* Занимает оставшееся пространство между header и footer */
+    padding: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #6c757d; /* Серый цвет для кнопок */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5a6268; /* Цвет при наведении */
+}
+
+.info {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: auto; /* Отступ сверху */
+    width: 300px; /* Ширина формы */
+    margin: 0 auto; /* Центрирование формы по горизонтали */
+    text-align: center; /* Выравнивание текста по центру */
+    border: 2px solid black; /* Добавление границы */
+    border-radius: 10px; /* Закругление углов формы */
+    padding: 20px; /* Отступы внутри формы */
+    background-color: #f9f9f9; /* Цвет фона формы */
+    display: flex; /* Использование flexbox */
+    flex-direction: column; /* Расположение дочерних элементов в столбец */
+    justify-content: center; /* Выравнивание контента по центру по вертикали */
+    align-items: center; /* Выравнивание элементов по центру по горизонтали */
+}
+
+
+/* Стили для заголовка "Login" */
+.login-form h2 {
+    margin-bottom: 20px; /* Отступ снизу для заголовка */
+    color: black; /* Черный цвет текста */
+    font-size: 24px; /* Размер шрифта */
+    text-transform: uppercase; /* Преобразование текста в верхний регистр */
+}
+
+/* Стили для полей ввода */
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: calc(100% - 40px); /* Ширина поля ввода */
+    padding: 10px; /* Отступы внутри поля ввода */
+    margin-bottom: 10px; /* Отступ снизу */
+    border: 1px solid black; /* Граница поля ввода */
+    border-radius: 5px; /* Закругление углов поля ввода */
+}
+
+/* Стили для кнопки "Login" */
+.login-form button {
+    margin-top: 20px; /* Отступ сверху для кнопки */
+    background-color: black; /* Черный цвет фона */
+    color: white; /* Белый цвет текста */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    border: none; /* Удаление границы */
+    cursor: pointer; /* Изменение курсора при наведении */
+    transition: background-color 0.3s ease; /* Плавное изменение цвета фона */
+    border-radius: 5px; /* Закругление углов кнопки */
+}
+
+/* Эффект затухания */
+.fade-in {
+    opacity: 0; /* Устанавливаем начальную прозрачность элемента */
+    animation: fade-in 1s forwards; /* Применяем анимацию */
+}
+
+@keyframes fade-in {
+    to {
+        opacity: 1; /* Делаем элемент полностью непрозрачным */
+    }
+}
+
